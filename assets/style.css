@@ -67,6 +67,42 @@
     cursor: pointer;
 }
 
+textarea {
+    resize: none;
+}
+
+#sourceCode {
+    position: absolute;
+    color: transparent;
+    caret-color: black;
+    white-space: break-spaces;
+    z-index: 10;
+    background-color: transparent;
+}
+
+#sourceCodeMode {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 20px 0 0;
+    padding: 10px;
+    padding-right: 15px;
+    margin-bottom: 7px;
+    background-color: #98c379;
+    color: #2e3a48;
+}
+
+.highlights {
+    z-index: 0;
+    top: 1px;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    height: inherit;
+    background: transparent !important;
+    border: 0px !important;
+}
+
 @media (prefers-color-scheme: dark) {
     html,
     body {
@@ -123,9 +159,18 @@
     select {
         color: black;
     }
-}
 
-textarea {
-    resize: none;
-}
+    ::selection {
+        color: #2d343e;
+        background: white;
+    }
 
+    #sourceCode {
+        position: absolute;
+        color: transparent;
+        caret-color: white;
+        white-space: break-spaces;
+        z-index: 10;
+        background-color: transparent;
+    }
+}
