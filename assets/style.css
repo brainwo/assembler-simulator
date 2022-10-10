@@ -2,8 +2,9 @@
     font-family: source-code-pro, Courier New;
 }
 
-.output, .output-bg {
-    background-color: #DFDFDF;
+.output,
+.output-bg {
+    background-color: #dfdfdf;
 }
 
 .output {
@@ -14,7 +15,7 @@
 }
 
 .instr-bg {
-    background-color: #E6F3FF;
+    background-color: #e6f3ff;
 }
 
 .instr-bg a {
@@ -23,7 +24,7 @@
 }
 
 .stack-bg {
-    background-color: #F8DCB4;
+    background-color: #f8dcb4;
 }
 
 .memory-block {
@@ -34,34 +35,97 @@
 
 .marker {
     width: 1.8em;
-    color: #FFF;
+    color: #fff;
     border-radius: 2px;
 }
 
 .marker-ip {
-    background-color: #428BCA;
+    background-color: #428bca;
 }
 
 .marker-sp {
-    background-color: #EEA236;
+    background-color: #eea236;
 }
 
 .marker-a {
-    background-color: #4D8C20;
+    background-color: #4d8c20;
 }
 
 .marker-b {
-	background-color: #22D19D;
+    background-color: #22d19d;
 }
 
 .marker-c {
-	background-color: #A137ED;
+    background-color: #a137ed;
 }
 
 .marker-d {
-	background-color: #E81F1F;
+    background-color: #e81f1f;
 }
 
 .codelabel-line a {
     cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background: #14161a;
+        color: white;
+    }
+
+    .panel {
+        background-color: #2d343e;
+    }
+
+    .panel-default {
+        border-color: #1f1f1f;
+    }
+
+    .panel-default > .panel-heading {
+        background: #282c34;
+        color: lightgray;
+        border-color: #1f1f1f;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(2n + 1) {
+        background-color: #282c34;
+    }
+
+    .output,
+    .output-bg {
+        background-color: #282c34;
+    }
+
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+        border-top: 1px solid #1f1f1f;
+    }
+
+    .form-control {
+        background: #2d343e;
+        color: white;
+        border: 1px solid #1f1f1f;
+    }
+
+    .instr-bg {
+        background-color: #415562;
+    }
+
+    .stack-bg {
+        background-color: #6f665b;
+    }
+
+    select {
+        color: black;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
